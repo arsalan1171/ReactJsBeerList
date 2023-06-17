@@ -4,7 +4,7 @@ let API_URL = "https://beerservice.azurewebsites.net/";
 
 const getBeersList = async () => {
   try {
-    let response = await axios.get(API_URL + "/Beer/menu");
+    let response = await axios.get(API_URL + "/beer/menu");
     return response.data;
   } catch (exception) {
     throw exception;
@@ -13,7 +13,7 @@ const getBeersList = async () => {
 
 const getBeerById = async (id) => {
   try {
-    let response = await axios.get(API_URL + `/Beer/${id}`);
+    let response = await axios.get(API_URL + `/beer/${id}`);
     return response.data;
   } catch (exception) {
     throw exception;
@@ -22,7 +22,7 @@ const getBeerById = async (id) => {
 
 const getRandomBeer = async () => {
   try {
-    let response = await axios.get(API_URL + "/Beer/random");
+    let response = await axios.get(API_URL + "/beer/random");
     return response.data;
   } catch (exception) {
     throw exception;

@@ -14,6 +14,7 @@ const Home = () => {
 
   return (
     <>
+      <h2 className="m-4">Search Beers</h2>
       <div className="search-form">
         <Form
           style={{ display: "flex" }}

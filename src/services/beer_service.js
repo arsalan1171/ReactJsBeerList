@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let API_URL = "https://beerservice.azurewebsites.net";
+let API_URL = "https://localhost:7199"; //"https://beerservice.azurewebsites.net";
 
 const getBeersList = async () => {
   try {

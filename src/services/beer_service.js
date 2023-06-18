@@ -7,7 +7,7 @@ const getBeersList = async () => {
     let response = await axios.get(API_URL + "/beer/menu");
     return response.data;
   } catch (exception) {
-    throw exception;
+    console.error("An error occurred:", exception.message);
   }
 };
 
@@ -16,7 +16,7 @@ const getBeerById = async (id) => {
     let response = await axios.get(API_URL + `/beer/${id}`);
     return response.data;
   } catch (exception) {
-    throw exception;
+    console.error("An error occurred:", exception.message);
   }
 };
 
@@ -25,7 +25,7 @@ const getRandomBeer = async () => {
     let response = await axios.get(API_URL + "/beer/random");
     return response.data;
   } catch (exception) {
-    throw exception;
+    console.error("An error occurred:", exception.message);
   }
 };
 

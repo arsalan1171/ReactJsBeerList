@@ -60,7 +60,7 @@ const BeerList = (searchQuery) => {
       </Button>
       {filtered?.length !== 0 ? (
         <div style={{ height: "20rem", overflowY: "scroll" }}>
-          {filtered.map((beer, index) => (
+          {filtered?.map((beer, index) => (
             <ListGroup variant="flush" key={index}>
               <ListGroup.Item
                 action

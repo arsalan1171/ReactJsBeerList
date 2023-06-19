@@ -58,7 +58,7 @@ const BeerList = (searchQuery) => {
       >
         Generate Random Beer
       </Button>
-      {filtered.length !== 0 ? (
+      {filtered?.length !== 0 ? (
         <div style={{ height: "20rem", overflowY: "scroll" }}>
           {filtered.map((beer, index) => (
             <ListGroup variant="flush" key={index}>
